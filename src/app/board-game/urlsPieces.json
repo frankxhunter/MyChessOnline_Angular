@@ -1,0 +1,14 @@
+{
+    "p": "pieces/pawnWhite.png",
+    "b": "pieces/bishopWhite.png",
+    "r": "pieces/rookWhite.png",
+    "n": "pieces/knightWhite.png",
+    "q": "pieces/queenWhite.png",
+    "k": "pieces/kingWhite.png",
+    "P": "pieces/pawnBlack.png",
+    "B": "pieces/bishopBlack.png",
+    "R": "pieces/rookBlack.png",
+    "N": "pieces/knightBlack.png",
+    "Q": "pieces/queenBlack.png",
+    "K": "pieces/kingBlack.png"
+}

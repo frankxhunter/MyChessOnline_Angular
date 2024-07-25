@@ -1,0 +1,36 @@
+.board{
+    margin: auto;
+    margin-top: 10%;
+    display: grid;
+    width: 500px;
+    height: 500px;  
+    gap: 0;
+    grid-template-rows: auto;
+}
+ .square{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    box-sizing: border-box;
+    position: relative;
+} 
+.squareWhite{
+    background-color: #EBECD0;
+}
+.squareBlack{
+    background-color: #739552;
+}
+.squareHover:hover{
+    filter: brightness(.8);
+}
+
+.imgPiece{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10%;
+    width: 50px;
+    height: 50px;
+    
+}
+

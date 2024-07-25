@@ -1,0 +1,147 @@
+.main{
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: center;
+
+}
+.hero{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1.6fr 1.4fr;
+}
+
+.board_img_container{
+    display: flex;
+    align-items: start;
+    padding-top: 40px;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    box-sizing:border-box;
+    
+}
+.board_img_container img{
+    width: 550px;
+}
+
+.content_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: 150px;
+}
+.container_buttons_hero_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.title_hero_section{
+    text-align: center;
+    line-height: 70px;
+    font-size: 70px;
+    width: 90%;
+    font-family: sans-serif;
+    margin-bottom: 30px;
+}
+
+.button_hero_section{
+    width: 100%;
+    font-size: 40px;
+    filter: brightness(.9);
+    border: none;
+    border-radius: var(--button-border-radius);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    padding: 16px 34px;
+
+}
+.content_button{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+}
+.description_content_button{
+    font-size: 20px;
+}
+.button_hero_section:hover{
+    filter: brightness(1);
+}
+.img_icon_button{
+    height: 60px;
+}
+
+.create_game_button{
+ background-color: var(--color-button-primary);
+}
+
+.join_game_button{
+     background-color: #4D4C49;
+}
+
+
+
+/* Resposive web */
+
+@media screen and (max-width: 1000px) {
+    .main{
+        max-width: 100%;
+    }
+    .hero{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
+    }
+    .board_img_container img{
+        width: 250px;
+    }
+ 
+    .content_section{
+        gap: 2px;
+        padding: 10px;
+    }
+    .container_buttons_hero_section{
+        gap: 10px;
+    }
+    .title_hero_section{
+        text-align: center;
+        line-height: 30px;
+        font-size: 30px;
+        font-family: sans-serif;
+        margin-bottom: 30px;
+    }
+    
+    .button_hero_section{
+        width: 100%;
+        font-size: 20px;
+        gap: 10px;
+        padding: 6px 14px;
+    
+    }
+    .description_content_button{
+        font-size: 10px;
+    }
+    .button_hero_section:hover{
+        filter: brightness(1);
+    }
+    .img_icon_button{
+        height: 60px;
+    }
+    
+    .create_game_button{
+     background-color: var(--color-button-primary);
+    }
+    
+    .join_game_button{
+         background-color: #4D4C49;
+    }
+    
+}

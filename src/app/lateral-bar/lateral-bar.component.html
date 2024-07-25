@@ -1,0 +1,49 @@
+<div [ngClass]="{'container': lateral_bar_open}">
+    <div class="aside" [ngClass]="{'invisible': !lateral_bar_open}">
+        <div class="title">
+            <div class="logo">
+                <img src="./greenPawn.png" alt="MyChessOnline">
+                <h1>MyChess</h1>
+            </div>
+            <button class="menuBurger close_menu_burger" (click)="closelateralBar()">
+                <span class="material-symbols-outlined">
+                    close
+                    </span>
+            </button>
+        </div>
+        <ul>
+            <li><img src="playHere.png" alt="Play here"><span>Play here</span></li>
+            <li><img src="createGame.png" alt="Create Game"><span>Create Game</span></li>
+            <li><img src="joinGame.png" alt="Join Game"><span>Join Game</span></li>
+        </ul>
+        <!-- <div class="rellanador"> </div> -->
+        <div class="login_button_container">
+            <button class="login_button signUp_button">Sign up</button>
+            <button class="login_button logIn_button">Log in</button>
+        </div>
+        <div class="contact">
+            <a class="madeBy" href="https://github.com/frankxhunter/MyChessOnline" target="_blank"><img
+                    src="icons\github.svg" alt="heart"> Repository</a>
+            <a class="madeBy" href="https://portafolio-frankxhunter.vercel.app/" target="_blank"><img src="heart.png"
+                    alt="heart"> By Frank</a>
+        </div>
+    </div>
+    
+</div>
+
+<div class="topBar">
+    <div class="leftItems">
+        <button class="menuBurger" (click)="openlateralBar()">
+            <span class="material-symbols-outlined">
+                menu
+                </span>
+        </button>
+        <div class="title"><img src="./greenPawn.png" alt="MyChessOnline">
+            <h1>MyChess</h1>
+        </div>
+    </div>
+    <div class="rigthItems">
+        <button class="login_button login_button_responsive signUp_button">Sign up</button>
+        <button class="login_button login_button_responsive logIn_button">Log in</button>
+    </div>
+</div>

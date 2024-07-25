@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "MyChessOnline2": {
+    "MyChessOnline": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/my-chess-online2",
+            "outputPath": "dist/my-chess-",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "MyChessOnline2:build:production"
+              "buildTarget": "MyChessOnline:build:production"
             },
             "development": {
-              "buildTarget": "MyChessOnline2:build:development"
+              "buildTarget": "MyChessOnline:build:development"
             }
           },
           "defaultConfiguration": "development"

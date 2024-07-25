@@ -1,0 +1,23 @@
+.body_app{
+    display: grid;
+    grid-template-columns: var(--width-lateral-bar) 1fr;
+}
+
+@media screen and (max-width: 1200px) {
+    .body_app{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+
+  
+
+}

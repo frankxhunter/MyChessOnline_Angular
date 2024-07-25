@@ -1,0 +1,10 @@
+<div class="board" [ngStyle]="{'grid-template-columns': 'repeat(' + this.columnCounter + ', 1fr)', 'grid-template-row': 'repeat(' + this.columnCounter + ', 1fr)'}">
+    @for (piece of pieces; track $index) {
+    <div class="square" [ngClass]="{'squareBlack': !isWhite($index), 'squareWhite': isWhite($index), 'squareHover': piece}"
+        [ngStyle]="{'grid-area':getPositionByIndexInGrid($index) }" (click)="funtionMove($index)">
+        @if (piece) {
+        <img class="imgPiece" [src]="getUrlImage(piece)" alt="">
+        }
+    </div>
+    }
+</div>

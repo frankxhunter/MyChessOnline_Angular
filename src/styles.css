@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --color-font-primary: #FFFFFF;
+    --color-font-secondary: #4E5B62;
+    --color-button-primary: #81b64c;
+    --color-button-secondary: #4d4c49;
+    --width-lateral-bar: 200px;
+    --button-border-radius: 5px;
+}
+
+* {
+    color: var(--color-font-primary);
+    
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #302E2B;
+
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
