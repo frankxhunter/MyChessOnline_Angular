@@ -27,11 +27,11 @@ export class BoardGameComponent {
 
   posStart: null | number = null;
 
-  funtionMove(index:number){
-    if(this.posStart === null){
+  functionMove(index:number){
+    if(this.posStart === null && this.pieces[index] !== ""){
       this.posStart = index;
     }
-    else if(index !== this.posStart){
+    else if(index !== this.posStart && this.posStart !== null){
       this.pieces[index] = this.pieces[this.posStart];
       this.pieces[this.posStart] = ""
       this.posStart = null

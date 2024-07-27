@@ -1,0 +1,45 @@
+<header class="header">
+    <img src="./MyChess.png" alt="MyChess">
+</header>
+<form action="">
+    <div class="inputText">
+        <span class="material-symbols-outlined">
+            person
+        </span>
+        <input type="email" placeholder="Email">
+    </div>
+    <div class="inputText">
+        <span class="material-symbols-outlined">
+            lock
+        </span>
+        <input type="password" placeholder="Password">
+        <span class="material-symbols-outlined">
+            visibility
+        </span>
+    </div>
+    <div class="smallText">
+        <div class="input_rememberMe">
+            <input type="checkbox" name="rememberMe" class="rememberMe">
+            <label for="rememberMe" class="content_small_text">Remember me</label>
+        </div>
+        <a href="#" class="content_small_text">Forgot Password?</a>
+    </div>
+    <button class="button_LogIn">Sign up</button>
+    <div class="container_or">
+        <hr>
+        OR
+        <hr>
+    </div>
+
+    <button class="button_google">
+        <img src="./icons/google.svg" alt="google " class="icon_google">
+        Log in with Google
+    </button>
+
+    <div class="footer_form">
+        <div>
+            Already have an account? <a [routerLink]="['/login']" class="link" >Log in</a> and start playing chess.
+        </div>
+    </div>
+
+</form>

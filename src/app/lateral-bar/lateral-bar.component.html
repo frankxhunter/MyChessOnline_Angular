@@ -1,25 +1,42 @@
 <div [ngClass]="{'container': lateral_bar_open}">
     <div class="aside" [ngClass]="{'invisible': !lateral_bar_open}">
         <div class="title">
-            <div class="logo">
-                <img src="./greenPawn.png" alt="MyChessOnline">
-                <h1>MyChess</h1>
+            <div class="logo" >
+                <a [routerLink]="['/']">
+                    <img src="./MyChess.png" alt="MyChessOnline">
+                    <!-- <h1>MyChess</h1> -->
+                </a>
             </div>
             <button class="menuBurger close_menu_burger" (click)="closelateralBar()">
                 <span class="material-symbols-outlined">
                     close
-                    </span>
+                </span>
             </button>
         </div>
         <ul>
-            <li><img src="playHere.png" alt="Play here"><span>Play here</span></li>
-            <li><img src="createGame.png" alt="Create Game"><span>Create Game</span></li>
-            <li><img src="joinGame.png" alt="Join Game"><span>Join Game</span></li>
+            <li>
+                <a [routerLink]="['/game']">
+                    <img src="playHere.png" alt="Play here">
+                    <span>Play here</span>
+                </a>
+            </li>
+            <li>
+                <a [routerLink]="['/game']">
+                    <img src="createGame.png" alt="Create Game">
+                    <span>Create Game</span>
+                </a>
+            </li>
+            <li>
+                <a [routerLink]="['/game']">
+                    <img src="joinGame.png" alt="Join Game">
+                    <span>Join Game</span>
+                </a>
+            </li>
         </ul>
         <!-- <div class="rellanador"> </div> -->
         <div class="login_button_container">
-            <button class="login_button signUp_button">Sign up</button>
-            <button class="login_button logIn_button">Log in</button>
+            <button class="login_button signUp_button" [routerLink]="['/signup']" >Sign up</button>
+            <button class="login_button logIn_button" [routerLink]="['/login']" >Log in</button>
         </div>
         <div class="contact">
             <a class="madeBy" href="https://github.com/frankxhunter/MyChessOnline" target="_blank"><img
@@ -28,7 +45,7 @@
                     alt="heart"> By Frank</a>
         </div>
     </div>
-    
+
 </div>
 
 <div class="topBar">
@@ -36,14 +53,19 @@
         <button class="menuBurger" (click)="openlateralBar()">
             <span class="material-symbols-outlined">
                 menu
-                </span>
+            </span>
         </button>
-        <div class="title"><img src="./greenPawn.png" alt="MyChessOnline">
-            <h1>MyChess</h1>
+        <div class="title">
+            <a [routerLink]="['/']">
+                <img src="./MyChess.png" alt="MyChessOnline">
+                <!-- <img src="./greenPawn.png" alt="MyChessOnline">
+                <h1>MyChess</h1> -->
+            </a>
         </div>
     </div>
     <div class="rigthItems">
-        <button class="login_button login_button_responsive signUp_button">Sign up</button>
-        <button class="login_button login_button_responsive logIn_button">Log in</button>
+        <button class="login_button login_button_responsive signUp_button" [routerLink]="['/signup']">Sign up</button>
+        <button class="login_button login_button_responsive logIn_button" [routerLink]="['/login']">Log in</button>
     </div>
 </div>
+

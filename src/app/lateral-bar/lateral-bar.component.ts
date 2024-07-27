@@ -1,10 +1,11 @@
 import { NgClass } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-lateral-bar',
   standalone: true,
-  imports: [NgClass],
+  imports: [NgClass, RouterLink],
   templateUrl: './lateral-bar.component.html',
   styleUrl: './lateral-bar.component.css'
 })

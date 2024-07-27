@@ -13,6 +13,7 @@
     justify-content: center;
     box-sizing: border-box;
     position: relative;
+    box-sizing: border-box;
 } 
 .squareWhite{
     background-color: #EBECD0;
@@ -22,6 +23,9 @@
 }
 .squareHover:hover{
     filter: brightness(.8);
+}
+.squareSelected{
+    background-color: #348ca0;
 }
 
 .imgPiece{
